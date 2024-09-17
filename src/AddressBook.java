@@ -1,19 +1,26 @@
 import java.util.*;
 
 public class AddressBook {
-    List<BuddyInfo> listOfBuddyInfo = new ArrayList<BuddyInfo>();
+
+    private List<BuddyInfo> buddyInfoList;
+
+    public AddressBook() {
+        this.buddyInfoList = new ArrayList<BuddyInfo>();
+    }
 
     public static void main(String[] args) {
         System.out.println("Address Book");
         BuddyInfo buddy = new BuddyInfo("Tom", "Carleton", 613);
         AddressBook addressBook = new AddressBook();
+        addressBook.addBuddy(buddy);
+        addressBook.removeBuddy(buddy);
     }
 
     private void addBuddy(BuddyInfo buddy) {
-        listOfBuddyInfo.add(buddy);
+        buddyInfoList.add(buddy);
     }
 
     private void removeBuddy(BuddyInfo buddy) {
-        listOfBuddyInfo.remove(buddy);
+        buddyInfoList.remove(buddy);
     }
 }
