@@ -7,6 +7,7 @@ public class AddressBook {
     public AddressBook() {
         this.buddyInfoList = new ArrayList<BuddyInfo>(); 
         //testing edits in github
+        //testing branching in github
     }
 
     public static void main(String[] args) {
