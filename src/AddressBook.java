@@ -5,7 +5,8 @@ public class AddressBook {
     private List<BuddyInfo> buddyInfoList;
 
     public AddressBook() {
-        this.buddyInfoList = new ArrayList<BuddyInfo>();
+        this.buddyInfoList = new ArrayList<BuddyInfo>(); 
+        //testing edits in github
     }
 
     public static void main(String[] args) {
