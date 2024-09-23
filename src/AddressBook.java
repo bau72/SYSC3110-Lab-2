@@ -22,6 +22,5 @@ public class AddressBook {
 
     private void removeBuddy(BuddyInfo buddy) {
         buddyInfoList.remove(buddy);
-        System.out.println("Hello");
     }
 }
